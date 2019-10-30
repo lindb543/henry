@@ -6,6 +6,15 @@
     <meta charset="UTF-8">
     <title>Our Work</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+
         /* Style the top navigation bar */
         .topnav {
             overflow: hidden;
@@ -30,22 +39,27 @@
             color: black;
         }
 
-        .logo {
+        #logo {
             float: right;
             display: inline-block;
             font-family: 'Rock Salt', cursive;
             color: white;
-            margin-left: 800px;
-            margin-top: 0;
-            font-size: small ;
+            margin-right: 20px;
+            margin-top: 0px;
+
+        }
+        .wrapper{
+            background-color: #41271a;
+            height: 1300px;
         }
         * {box-sizing:border-box}
 
         /* Slideshow container */
         .slideshow-container {
-            max-width: 800px;
+            max-width: 600px;
             position: relative;
-            margin: auto;
+            margin: 0 auto;
+            margin-top: 400px;
         }
 
         /* Hide the images by default */
@@ -61,7 +75,7 @@
             width: auto;
             margin-top: -22px;
             padding: 16px;
-            color: black;
+            color: white;
             font-weight: bold;
             font-size: 18px;
             transition: 0.6s ease;
@@ -82,12 +96,12 @@
 
         /* Caption text */
         .text {
-            color: #f2271a;
+            color: #f2f2f2;
             font-size: 15px;
             padding: 8px 12px;
             position: absolute;
             bottom: 8px;
-            width: 100%;
+            width: auto;
             text-align: center;
         }
 
@@ -106,14 +120,14 @@
             height: 15px;
             width: 15px;
             margin: 0 2px;
-            background-color: #bbb;
+            background-color: blanchedalmond;
             border-radius: 50%;
             display: inline-block;
             transition: background-color 0.6s ease;
         }
 
         .active, .dot:hover {
-            background-color: #717171;
+            background-color: #6d4f41;
         }
 
         /* Fading animation */
@@ -133,80 +147,76 @@
             from {opacity: .4}
             to {opacity: 1}
         }
+
+        .footer {
+            background-color: #41271a;
+            color: blanchedalmond;
+            font-family: sans-serif;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
 <div class="wrapper">
     <div class="topnav">
         <ul>
+            <a href="index.html">HOME</a>
             <a href="">CONTACT</a>
             <a href="#">ABOUT</a>
-            <a href="#">OUR WORK</a>
+            <a href="our_work.html">OUR WORK</a>
             <!-- void-- >
             <img src="64.png" alt="wooden letter h" height="24px" width="24px">
             <-- end void -->
         </ul>
-        <a href="index.html"><h1 class="logo"> Henry's Woodworking</h1></a>
+        <h1 id="logo">Henry's Woodworking</h1>
     </div>
-    <!-- Slideshow container -->
-    <h2>Kitchens</h2>
-    <div class="slideshow-container">
+    <div class="container">
+        <br>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 7</div>
-            <img src="imgs/kitchen/kitchen1.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
-        </div>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="henry/imgs/kitchen/kitchen1.jpg" alt="cabinets" style="width: 100px">
+                <div class="text">Caption Text</div>
+            </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 7</div>
-            <img src="imgs/kitchen/kitchen2.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="henry/imgs/kitchen/kitchen1.jpg" style="width: 100%">
+                <div class="text">Caption Two</div>
+            </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 7</div>
-            <img src="imgs/kitchen/kitchen3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 7</div>
-            <img src="imgs/kitchen/kitchen4.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 7</div>
-            <img src="imgs/kitchen/kitchen5.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">6 / 7</div>
-            <img src="imgs/kitchen/kitchen6.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">7 / 7</div>
-            <img src="imgs/kitchen/kitchen7.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="henry/imgs/kitchen/kitchen3.jpg" style="width: 100%">
+                <div class="text">Caption Three</div>
+            </div>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
-    <br>
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
+    <div class="footer"><p>this is the text that goes in the footer</p>
+        <ul>
+            <a href="">caskets</a>
+            <a href="">furniture</a>
+        </ul>
     </div>
 </div>
+
 </body>
 </html>
