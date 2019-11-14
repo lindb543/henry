@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Ropa+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png"/>
+    <title>Henry's Woodworking</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #41271a;
+        }
+
+
+        /* Style the top navigation bar */
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #6d4f41;
+        }
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 28px 32px;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'Ropa Sans', sans-serif;
+        }
+       /* .topnav a {
+            float: left;
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 28px 32px;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'Ropa Sans', sans-serif;
+        }
+
+        /* Style the topnav links */
+        /*.topnav a {
+            float: left;
+            display: inline-block;
+            margin: 0;
+            min-height: 100%;
+            align-items: stretch;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 2% 2%;
+            padding: 28px 32px;*/
+            /* text-decoration: none;
+            font-size: 24px;
+            font-family: 'Ropa Sans', sans-serif;
+        } */
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: blanchedalmond;
+            color: #41271a;
+        }
+
+        #logo {
+            float: right;
+            display: inline-block;
+            font-family: 'Rock Salt', cursive;
+            color: white;
+            margin-right: 20px;
+            margin-top: 0px;
+        }
+        .image{
+            background-color: #41271a;
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 1%;
+            max-width: 100%;
+            height: auto;
+        }
+        .top-text{
+            position: absolute;
+            bottom: 55%;
+            left: 15%;
+            font-family: 'Ropa Sans', sans-serif;
+            color: white;
+            font-size: 62px;
+            transform: rotate(13.01deg);
+        }
+        .bottom-text {
+            position: absolute;
+            bottom: 37.5%;
+            right: 25%;
+            font-family: 'Ropa Sans', sans-serif;
+            color: white;
+            font-size: 62px;
+            transform: rotate(5.46deg);
+        }
+        .button {
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+            display: block;
+            border-radius: 12px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 300px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding-left: 40px;
+            text-align: center;
+            background-color: #41271a;
+            color: blanchedalmond;
+            font-family: sans-serif;
+            font-size: 11px;
+            height: 140px;
+            border-style: solid;
+            border-color: blanchedalmond;
+            border-width: 3px 0 0 0;
+            position: relative;
+            bottom: 0;
+            margin-bottom: 0;
+
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            margin-bottom: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="topnav">
+        <ul>
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="#">ABOUT</a>
+            <a href="our_work.html">OUR WORK</a>
+            <!-- void-- >
+            <img src="64.png" alt="wooden letter h" height="24px" width="24px">
+            <-- end void -->
+        </ul>
+            <h1 id="logo">Henry's Woodworking</h1>
+    </div>
+    <div class="container">
+    <div class="image">
+
+<img src="carpenter-hands-indoors-374861.jpg" alt="carpenter hands" width="1320">
+
+    </div>
+        <div class="top-text">If it's made of wood</div>
+        <div class="bottom-text">we can build it</div>
+        <a href="contact.html"><button class="button" style="vertical-align:middle"><span>Request a quote </span></button></a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <p>Hours of operation:</p>
+            <p>
+                8am - 4:30pm Monday - Friday</p>
+            <p>
+                9am - 1pm Saturday</p>
+            <p>Closed Sunday</p>
+        </div>
+        <div class="column">
+            <p>
+                Henry's Woodworking</p>
+            <p>PO Box 414</p>
+            <p>Pine River, MN 56474</p>
+        </div>
+        <div class="column">
+            <p>
+                info@henryswoodworking.com</p
+            <p class="right">
+                Phone:218-587-4899<br>
+
+                Fax: 218-587-3482</p>
+        </div>
+    </div>
+</div>
+
+        </ul>
+       </div>
+        </div>
+    </div>
+</body>
+</html>
