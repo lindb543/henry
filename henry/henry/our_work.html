@@ -53,7 +53,28 @@
             background-color: #41271a;
             height: 1200px;
         }
+        .toptext{
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            padding-left: 45%;
+            font-family: "Ropa Sans",sans-serif;
+            color: white;
+        }
+        /* unvisited link */
+        a:link {
+            color: white;
+        }
 
+        /* visited link */
+        a:visited {
+            color: white;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: blanchedalmond;
+        }
         * {
             box-sizing: border-box
         }
@@ -175,6 +196,7 @@
             border-style: solid;
             border-color: blanchedalmond;
             border-width: 3px 0 0 0;
+            bottom: 0;
 
         }
 
@@ -200,16 +222,11 @@
         </ul>
         <h1 id="logo">Henry's Woodworking</h1>
     </div>
-    <div class="container">
 
-        <br>
-        <!-- The navigation menu -->
-        <div class="navbar">
-            <a class="active" href="#">Home</a>
-            <a href="doors.html">Doors</a>
-            <a href="#">Contact</a>
-            <a href="#">Login</a>
-        </div>
+        <div class="container">
+            <div class="toptext"> <a href="doors.html"><p>Barn Doors</p></a>
+                <h2>Kitchen</h2></div>
+            <br>
 
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -271,7 +288,11 @@
 
         </div>
     </div>
-
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="row">
         <div class="column">
             <p>Hours of operation:</p>
