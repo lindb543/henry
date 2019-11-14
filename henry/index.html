@@ -14,6 +14,7 @@
 
         body {
             margin: 0;
+            background-color: #41271a;
         }
 
 
@@ -78,14 +79,12 @@
         }
         .image{
             background-color: #41271a;
-            display: block;
+            display: inline-block;
             margin: 0 auto;
-            padding-left: 5px;
+            position: relative;
+            padding-left: 1%;
             max-width: 100%;
             height: auto;
-           /* padding-left: 5px;
-            max-width: 100%;
-            height: auto; */
         }
         .top-text{
             position: absolute;
@@ -148,21 +147,31 @@
             right: 0;
         }
 
-        .footer {
+        .column {
+            float: left;
+            width: 33.33%;
+            padding-left: 40px;
+            text-align: center;
             background-color: #41271a;
             color: blanchedalmond;
             font-family: sans-serif;
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-            height: 80px;
+            font-size: 11px;
+            height: 140px;
+            border-style: solid;
+            border-color: blanchedalmond;
+            border-width: 3px 0 0 0;
+            position: relative;
+            bottom: 0;
+            margin-bottom: 0;
+
         }
-        #col1{
-            float: left;
-            padding-left: 10px;
-            position: absolute;
-            left: 15px;
-            top: 900px;
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            margin-bottom: 0;
         }
 
 
@@ -185,19 +194,39 @@
     <div class="container">
     <div class="image">
 
-<img src="carpenter-hands-indoors-374861.jpg" alt="carpenter hands" width="1340" height="753.75">
+<img src="carpenter-hands-indoors-374861.jpg" alt="carpenter hands" width="1320">
 
     </div>
         <div class="top-text">If it's made of wood</div>
         <div class="bottom-text">we can build it</div>
-        <button class="button" style="vertical-align:middle"><span>Request a quote </span></button>
+        <a href="contact.html"><button class="button" style="vertical-align:middle"><span>Request a quote </span></button></a>
     </div>
 
-    <div class="footer"><p>this is the text that goes in the footer</p>
-       <div id="col1"> <ul>
-            <li>hot</li>
-            <li>cross</li>
-            <li>buns</li>
+    <div class="row">
+        <div class="column">
+            <p>Hours of operation:</p>
+            <p>
+                8am - 4:30pm Monday - Friday</p>
+            <p>
+                9am - 1pm Saturday</p>
+            <p>Closed Sunday</p>
+        </div>
+        <div class="column">
+            <p>
+                Henry's Woodworking</p>
+            <p>PO Box 414</p>
+            <p>Pine River, MN 56474</p>
+        </div>
+        <div class="column">
+            <p>
+                info@henryswoodworking.com</p
+            <p class="right">
+                Phone:218-587-4899<br>
+
+                Fax: 218-587-3482</p>
+        </div>
+    </div>
+</div>
 
         </ul>
        </div>

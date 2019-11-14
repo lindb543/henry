@@ -48,6 +48,28 @@
             margin-top: 0px;
 
         }
+.toptext{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding-left: 45%;
+    font-family: "Ropa Sans",sans-serif;
+    color: white;
+}
+        /* unvisited link */
+        a:link {
+            color: white;
+        }
+
+        /* visited link */
+        a:visited {
+            color: white;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: blanchedalmond;
+        }
 
         .wrapper {
             background-color: #41271a;
@@ -160,13 +182,27 @@
             }
         }
 
-        .footer {
+        .column {
+            float: left;
+            width: 33.33%;
+            padding-left: 40px;
+            text-align: center;
             background-color: #41271a;
             color: blanchedalmond;
             font-family: sans-serif;
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
+            font-size: 11px;
+            height: 140px;
+            border-style: solid;
+            border-color: blanchedalmond;
+            border-width: 3px 0 0 0;
+
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
@@ -185,28 +221,34 @@
         <h1 id="logo">Henry's Woodworking</h1>
     </div>
     <div class="container">
-        <h2>Kitchens</h2>
+       <div class="toptext"> <a href="our_work.html"><p>Kitchens</p></a>
+        <h2>Barn Doors</h2></div>
         <br>
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="imgs/doors/door1.jpg" alt="cabinets" style="width: 100%">
-                <div class="text">ASH CABINETS</div>
+                <div class="numbertext">1 / 4</div>
+                <img src="imgs/barndoor/barn-door1a-558x800.jpg" alt="barn door" style="width: 100%">
+                <div class="text"></div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="imgs/doors/door2.jpg" style="width: 100%">
-                <div class="text">ASH CABINETS</div>
+                <div class="numbertext">2 / 4</div>
+                <img src="imgs/barndoor/barn-door1b-750x422%20-%20Copy.jpg" style="width: 100%">
+                <div class="text"></div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="imgs/doors/door3.jpg" style="width: 100%">
-                <div class="text">RUSTIC BIRCH CABINETS</div>
+                <div class="numbertext">3 / 4</div>
+                <img src="imgs/barndoor/barn-door-2_615x800.jpg" style="width: 100%">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="imgs/barndoor/barn-door-3-541x800.jpg" style="width: 100%">
+                <div class="text"></div>
             </div>
 
             </div>
@@ -222,20 +264,36 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
 
 
         </div>
     </div>
-    <br>
-    <br>
-    <br>
 
-    <div class="footer"><p>this is the text that goes in the footer</p>
-        <ul>
-            <a href="">caskets</a>
-            <a href="">furniture</a>
-        </ul>
+<div class="row">
+    <div class="column">
+        <p>Hours of operation:</p>
+        <p>
+            8am - 4:30pm Monday - Friday</p>
+        <p>
+            9am - 1pm Saturday</p>
+        <p>Closed Sunday</p>
     </div>
+    <div class="column">
+        <p>
+            Henry's Woodworking</p>
+        <p>PO Box 414</p>
+        <p>Pine River, MN 56474</p>
+    </div>
+    <div class="column">
+        <p>
+            info@henryswoodworking.com</p
+        <p class="right">
+            Phone:218-587-4899<br>
+
+            Fax: 218-587-3482</p>
+    </div>
+</div>
 </div>
 <script>
     var slideIndex = 1;
